@@ -28,6 +28,11 @@
         .section {
             margin-bottom: 20px;
         }
+	.toggle-link {
+            cursor: pointer;
+            color: blue;
+            text-decoration: underline;
+        }
         footer {
             text-align: center;
             margin-top: 40px;
@@ -48,39 +53,59 @@
 	<a href="misc.html">Miscellaneous</a>
     </div>
 
+    <h2>Spring 2025</h2>
     
-    <div class="section">
-        <h2>Spring 2025</h2>
-    </div>
-    Two reading courses.
-    <div class="section">
-        <h3>Class Field Theory</h3>
-	Supervised by Prof. <a href="https://web.ma.utexas.edu/users/mirela/">Mirela Ciperiani.</a> 
+
+    I am taking two conference (reading) courses: Class Field Theory and Automorphic Forms.
+    
+    <h3><span class="toggle-link" onclick="toggleSection('classFieldTheory')">Class Field Theory</span></h3>
+    <div id="classFieldTheory" class="content" style="display: none;">
+        Supervised by Prof. <a href="https://web.ma.utexas.edu/users/mirela/">Mirela Ciperiani.</a> 
         <ul>
-        	<li>Week 1. <i>G-modules, functor of G-invariants and its cohomological extension, coinduced modules, standard complex.</i> Isaac
-		<li>Week 2. <i>Standard complex, group homology, connecting maps for first cohomology and homology, change of groups, dimension shifting.</i> Sudharshan
-		<li>Week 3. <i>Inflation-Restriction exact sequence, Tate cohomology groups.</i> Isaac
-		<li>Week 4. <i>Tate groups, cup products.</i> Sudharshan
-		<li>Week 5. <i>Cohomological triviality.</i> Sudharshan
-		<li>Week 6. <i>Herbrand quotient, Tate's Theorem.</i> Isaac
+            <li>Week 1. <i>G-modules, functor of G-invariants and its cohomological extension, coinduced modules, standard complex.</i> Isaac</li>
+            <li>Week 2. <i>Standard complex, group homology, connecting maps for first cohomology and homology, change of groups, dimension shifting.</i> Sudharshan</li>
+            <li>Week 3. <i>Inflation-Restriction exact sequence, Tate cohomology groups.</i> Isaac</li>
+            <li>Week 4. <i>Tate groups, cup products.</i> Sudharshan</li>
+            <li>Week 5. <i>Cohomological triviality.</i> Sudharshan</li>
+            <li>Week 6. <i>Herbrand quotient, Tate's Theorem.</i> Isaac</li>
         </ul>
     </div>
     
-    <div class="section">
-	<h3>Automorphic Forms</h3>
-	Supervised by <a href="https://web.ma.utexas.edu/users/sl55444/">Shilin Lai.</a>
+    <h3><span class="toggle-link" onclick="toggleSection('automorphicForms')">Automorphic Forms</span></h3>
+    <div id="automorphicForms" class="content" style="display: none;">
+        Supervised by <a href="https://web.ma.utexas.edu/users/sl55444/">Shilin Lai.</a>
+        <ul>
+            <li>Week 1. <i>Overview of Tate's Thesis.</i> Leo</li>
+            <li>Week 2-3. <i>Local Theory: Zeta functions, functional equation, multiplicity one.</i></li>
+            <li>Week 4. <i>Local Theory: Computing Zeta values for specific functions, Riemann-Roch from Poisson summation. Trailer for Global Theory.</i></li>
+            <li>Week 5. <i>Global theory. Additive and multiplicative fundamental domains. Compactness of adelic quotient is Dirichlet's unit theorem + finiteness of class number. Global functional equations, L-factors.</i></li>
+            <li>Week 6. <i>Global functional equation. Determining the sign of the Gauss sum using quadratic reciprocity and Tate's thesis. Gamma factors, significance of root numbers. Functional equation for L-series.</i></li>
+            <li>Week 7. <i>Eisenstein series. Intertwining operator on L2 Automorphic-forms. Discrete and continuous spectra.</i> Leo</li>
+            <li>Week 8. <i>Real analytic Eisenstein series. Computing the Fourier coefficients and constant terms. Functional equation.</i> Yash</li>
+            <li>Week 9. <i>Modular forms as Automorphic Forms. Automorphic forms on adelic points of an algebraic group. Finiteness of the dimension of space of automorphic forms.</i></li>
+            <li>Week 10. <i>Poincare series, Jaquet functor, Frobenius reciprocity, an intertwining operator.</i></li>
+        </ul>
+    </div>
+
+    <h3><span class="toggle-link" onclick="toggleSection('confspring25')">Conferences</span></h3>
+    <div id="confspring25" class="content" style="display: none;">
+    
 	<ul>
-		<li>Week 1. <i>Overview of Tate's Thesis.</i> Leo
-		<li>Week 2-3. <i>Local Theory: Zeta functions, functional equation, multiplicity one.</i>
-		<li>Week 4. <i>Local Theory: Computing Zeta values for specific functions, Riemann-Roch from Poisson summation. Trailer for Global Theory.</i>
-		<li>Week 5. <i>Global theory. Additive and multiplicative fundamental domains. Compactness of adelic quotient is Dirichlet's unit theorem + finiteness of class number. Global functional equations, L-factors.</i>
-		<li>Week 6. <i>Global functional equation. Determining the sign of the Gauss sum using quadratic reciprocity and Tate's thesis. Gamma factors, significance of root numbers. Functional equation for L-series.</i>
-		<li>Week 7. <i>Eisenstein series. Intertwining operator on L2 Automorphic-forms. Discrete and continuous spectra.</i> Leo
-		<li>Week 8. <i>Real analytic Eisenstein series. Computing the Fourier coefficients and constant terms. Functional equation.</i> Yash
-		<li>Week 9. <i>Modular forms as Automorphic Forms. Automorphic forms on adelic points of an algebraic group. Finiteness of the dimension of space of automorphic forms.</i>
-		<li>Week 10. <i>Poincare series, Jaquet functor, Frobenius reciprocity, an intertwining operator.</i>
+	    <li><a href="https://franksottile.github.io/conferences/TAGS25/">TAGS</a> March 28-30.</li>
+	    <li><a href="http://automorphicformsworkshop.org">AFW</a> (Upcoming) April 30-May 5.</li>
 	</ul>
     </div>
+    <script>
+        function toggleSection(id) {
+            var content = document.getElementById(id);
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+
     <footer>
         &copy; 2024 Sudharshan K V
     </footer>

@@ -28,9 +28,11 @@
         .section {
             margin-bottom: 20px;
         }
-	.toggle-link {
+        .toggle-link {
             cursor: pointer;
             color: blue;
+        }
+        .toggle-link:hover {
             text-decoration: underline;
         }
         footer {
@@ -42,21 +44,21 @@
     </style>
 </head>
 <body>
-    <h1>Academic</h1>
+    <h1>Academics</h1>
     <p style="text-align: center;">Sudharshan K V</p>
     
     <div class="nav">
         <a href="index.html">Home</a> |
         <a href="publications.html">Publications</a> |
         <a href="teaching.html">Teaching</a> |
-	<a href="academic.html">Academics</a>  |
-	<a href="misc.html">Miscellaneous</a>
+        <a href="academic.html">Academics</a>  |
+        <a href="misc.html">Miscellaneous</a>
     </div>
-
+	
+	<a href="seminar.html">Seminars</a>.
+	
     <h2>Spring 2025</h2>
-    
-
-    I am taking two conference (reading) courses: Class Field Theory and Automorphic Forms.
+    I took two conference (reading) courses: Class Field Theory and Automorphic Forms.
     
     <h3><span class="toggle-link" onclick="toggleSection('classFieldTheory')">Class Field Theory</span></h3>
     <div id="classFieldTheory" class="content" style="display: none;">
@@ -68,9 +70,9 @@
             <li>Week 4. <i>Tate groups, cup products.</i> Sudharshan</li>
             <li>Week 5. <i>Cohomological triviality.</i> Sudharshan</li>
             <li>Week 6. <i>Herbrand quotient, Tate's Theorem.</i> Isaac</li>
-	    <li>Week 7. <i>Profinite groups, discrete modules, cohomology. Hilbert's Theorem 90.</i> Sudharshan</li>
-	    <li>Week 8-9. <i>Brauer Groups, Local Class Field Theory.</i> Sudharshan</li>	
-	    <li>Week 10-11. <i>Reciprocity map.</i> Isaac</li>
+            <li>Week 7. <i>Profinite groups, discrete modules, cohomology. Hilbert's Theorem 90.</i> Sudharshan</li>
+            <li>Week 8-9. <i>Brauer Groups, Local Class Field Theory.</i> Sudharshan</li>	
+            <li>Week 10-11. <i>Reciprocity map.</i> Isaac</li>
         </ul>
     </div>
     
@@ -87,24 +89,24 @@
             <li>Week 8. <i>Real analytic Eisenstein series. Computing the Fourier coefficients and constant terms. Functional equation.</i> Yash</li>
             <li>Week 9. <i>Modular forms as Automorphic Forms. Automorphic forms on adelic points of an algebraic group. Finiteness of the dimension of space of automorphic forms.</i></li>
             <li>Week 10. <i>Poincare series, Jaquet functor, Frobenius reciprocity, an intertwining operator.</i></li>
-	    <li>Week 11-12. <i>Analytic Continuation of the intertwining operator.</i></li>
-    	    <li>Week 13. <i>Residue of Eisenstein series and the volume of fundamental domain.</i> Yash</li>
-	    <li>Week 14. <i>Unramified computations for local intertwining operator.</i></li>
-	    <li>Week 15. <i>Whittaker Model of archimedean principal series representation.</i></li>
-	    <li>Week 16. <i>Satake Isomorphism for GL2(Qp).</i></li>
-	    <li>Week 17. <i>Relations between Hecke operators, Whittaker recursion.</i></li>
+            <li>Week 11-12. <i>Analytic Continuation of the intertwining operator.</i></li>
+            <li>Week 13. <i>Residue of Eisenstein series and the volume of fundamental domain.</i> Yash</li>
+            <li>Week 14. <i>Unramified computations for local intertwining operator.</i></li>
+            <li>Week 15. <i>Whittaker Model of archimedean principal series representation.</i></li>
+            <li>Week 16. <i>Satake Isomorphism for GL2(Qp).</i></li>
+            <li>Week 17. <i>Relations between Hecke operators, Whittaker recursion.</i></li>
         </ul>
     </div>
 
     <h3><span class="toggle-link" onclick="toggleSection('confspring25')">Conferences</span></h3>
     <div id="confspring25" class="content" style="display: none;">
-    
-	<ul>
-	    <li><a href="https://franksottile.github.io/conferences/TAGS25/">TAGS</a> March 28-30.</li>
-	    <li><a href="http://automorphicformsworkshop.org">AFW</a> April 30-May 5.</li>
-	    <li><a href="https://icts.res.in/program/afbk">AFBK</a> May 19-30.</li>
-	</ul>
+        <ul>
+            <li><a href="https://franksottile.github.io/conferences/TAGS25/">TAGS</a> March 28-30.</li>
+            <li><a href="http://automorphicformsworkshop.org">AFW</a> April 30-May 5.</li>
+            <li><a href="https://icts.res.in/program/afbk">AFBK</a> May 19-30.</li>
+        </ul>
     </div>
+
     <script>
         function toggleSection(id) {
             var content = document.getElementById(id);

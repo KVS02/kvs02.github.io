@@ -34,6 +34,13 @@
             font-size: 0.9em;
             color: #555;
         }
+        .toggle-link:hover {
+            text-decoration: underline;
+        }
+        .toggle-link {
+            color: blue;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -47,8 +54,8 @@
 	<a href="academic.html">Academics</a>  |
 	<a href="misc.html">Miscellaneous</a>
     </div>
-    <div class="DRP">
-        <span class="toggle-link" onclick="toggleSection('DRP-content')">DRP</span>
+    <div class="section">
+        <h3><span class="toggle-link" onclick="toggleSection('DRP-content')">DRP</span></h3>
         <div id="DRP-content" style="display: none;">   
             <p>Directed Reading Program <a href="https://sites.google.com/view/utmathdrp">(DRP)</a> is a program where undergraduate students can work one-on-one with graduate students on a topic of their choice.</p>
             <ul>

@@ -47,16 +47,26 @@
 	<a href="academic.html">Academics</a>  |
 	<a href="misc.html">Miscellaneous</a>
     </div>
-
+    <div class="DRP">
+        <span class="toggle-link" onclick="toggleSection('DRP-content')">DRP</span>
+        <div id="DRP-content" style="display: none;">   
+            <p>Directed Reading Program <a href="https://sites.google.com/view/utmathdrp">(DRP)</a> is a program where undergraduate students can work one-on-one with graduate students on a topic of their choice.</p>
+            <ul>
+                <li><strong>Spring 2026:</strong> </li>
+                <li><strong>Fall 2025:</strong> Nikhil Reddy, <i>p-adic L-functions</i>.</li>
+                <li><strong>Spring 2025:</strong> No mentees.</li>
+                <li><strong>Fall 2024:</strong> Ivan Herrera, <i>Burnside's Lemma</i>.</li>
+            </ul>
+        </div> 
+    </div>
 	<div class="semester">
         <h3>Spring 2026</h3>
-        <p>I am a TA for M 343 L - Applied Number Theory (taught by Prof. Lorenzo Sadun), and M 379 T - Quadratic Forms (taught by Prof. Mirela Ciperiani).</p>
+        <p>I am a TA for M 343L - Applied Number Theory (taught by Prof. Lorenzo Sadun), and M 379T - Quadratic Forms (taught by Prof. Mirela Ciperiani).</p>
     </div>
 
     <div class="semester">
         <h3>Fall 2025</h3>
         <p>I am a TA for M 408M - Multivariable Calculus (taught by Prof. Haseeb Ansari). Course materials on Canvas.</p>
-	<p>Mentored a <a href="https://sites.google.com/view/utmathdrp">DRP</a> student - Nikhil Reddy, p-adic L-functions. Presentation is <a href="Files/Talks/nikhil_p-adic_L-functions.pdf">here.</a>
     </div>
         
     <div class="semester">
@@ -72,5 +82,17 @@
     <footer>
         &copy; 2024 Sudharshan K V
     </footer>
+
+    <script>
+        function toggleSection(id) {
+            var content = document.getElementById(id);
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+
 </body>
 </html>
